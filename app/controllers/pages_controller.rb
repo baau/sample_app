@@ -10,4 +10,4 @@ class PagesController < ApplicationController
   	@title = "About Us"
   end
 end
-
+ 
