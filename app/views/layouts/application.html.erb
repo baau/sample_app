@@ -4,34 +4,19 @@
 		<title>Ruby on Rails Sample App | <%= @title %>
 		</title>
 		<%= csrf_meta_tag %>
-		<!--[If lt IE 9]>
-		<script src = "https://html5shiv.googlecode.com/svn/trunk/html5.js" ></script>
-		<![endif]--> 
-		<%= stylesheet_link_tag "/assets/blueprint/screen", :media => "screen"%>
-		<%= stylesheet_link_tag "/assets/blueprint/print", :media => "screen"%>
-		<!--[If lt IE 8]>
-		<%= stylesheet_link_tag '/assets/blueprint/ie' %>
-		<![endif]-->
-		<%= stylesheet_link_tag "/assets/custom", :media =>	"screen"%>
+		<!-- here the 'styleshets' is the partial in rails, it is the '_stylesheets' file that this link refers to -->
+		<%= render 'layouts/stylesheets' %>
 
 	</head>
 
 
 <body>
 	<div class= "container">
-		<header>
-			<%= image_tag("logo.png", :alt => "Sample App",:class => "round") %>
-			<nav class = "round">
-				<ul>
-					<li><%= link_to "Home", '#' %></li>
-					<li><%= link_to "Help", '#' %></li>
-					<li><%= link_to "Sign In", '#' %></li>
-				</ul>
-			</nav>
-			<section class = "round">
+		<%= render 'layouts/header' %> 
+		<section class = "round">
 				<%= yield %>
-			</section>
-		</header>
+		</section>
+		<%=  render 'layouts/footer'%>
 	
 	</div>
 </body>
