@@ -7,12 +7,12 @@
 		<!--[If lt IE 9]>
 		<script src = "https://html5shiv.googlecode.com/svn/trunk/html5.js" ></script>
 		<![endif]--> 
-		<%= stylesheet_link_tag "blueprint/screen", :media => "screen"%>
-		<%= stylesheet_link_tag "blueprint/print", :media => "screen"%>
+		<%= stylesheet_link_tag "/assets/blueprint/screen", :media => "screen"%>
+		<%= stylesheet_link_tag "/assets/blueprint/print", :media => "screen"%>
 		<!--[If lt IE 8]>
-		<%= stylesheet_link_tag 'blueprint/ie' %>
+		<%= stylesheet_link_tag '/assets/blueprint/ie' %>
 		<![endif]-->
-		<%= stylesheet_link_tag "custom", :media =>	"screen"%>
+		<%= stylesheet_link_tag "/assets/custom", :media =>	"screen"%>
 
 	</head>
 
@@ -20,7 +20,7 @@
 <body>
 	<div class= "container">
 		<header>
-			<%= image_tag("/public/images/logo.png",:alt => "Sample App",:class => "round") %>
+			<%= image_tag("logo.png", :alt => "Sample App",:class => "round") %>
 			<nav class = "round">
 				<ul>
 					<li><%= link_to "Home", '#' %></li>
