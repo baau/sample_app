@@ -3,6 +3,7 @@
 	<head>
 		<title>Ruby on Rails Sample App | <%= @title %>
 		</title>
+		<!-- This "csrf" tag is used for some forgery prevention,no to botherd much  -->
 		<%= csrf_meta_tag %>
 		<!-- here the 'styleshets' is the partial in rails, it is the '_stylesheets' file that this link refers to -->
 		<%= render 'layouts/stylesheets' %>
