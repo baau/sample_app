@@ -1,17 +1,22 @@
 Rails.application.routes.draw do
+  
+
   # You can have the root of your site routed with "root"
   root 'pages#home'
   # match '/contact',:to => 'pages#contact'
   # match '/about',:to => 'pages/about'
   # match '/help',:to => 'pages/help'
-
+  # Pages Cobtroller Links
   get '/contact', :to => 'pages#contact'
   get '/about', :to => 'pages#about'
   get '/help', :to => 'pages#help'
 
+  #Users Controller Link
+  get '/new', :to => 'users#new'
 
 
   # these all are old syntax 
+  #get 'users/new'
   #get 'pages/home'
 
   
