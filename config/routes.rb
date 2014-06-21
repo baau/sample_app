@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get '/help', :to => 'pages#help'
 
   #Users Controller Link
-  get '/new', :to => 'users#new'
+  get '/signup', :to => 'users#new'
 
 
   # these all are old syntax 
